@@ -1,8 +1,11 @@
 ---
-layout: categories
+layout: page
 title: Categories
+subtitle: From the pexels folder
 permalink: /categories/
-hide: false
 excluded: true
+hide: false
 showCounts: false
+position: 2
+tags: [Page]
 ---
