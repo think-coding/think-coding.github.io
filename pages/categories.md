@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Categories
+title: 索引
 subtitle: From the pexels folder
 permalink: /categories/
 excluded: true
