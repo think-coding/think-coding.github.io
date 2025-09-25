@@ -4,7 +4,7 @@ title: 画廊
 subtitle: From the pexels folder
 permalink: /gallery/
 gallery_path: "assets/img/pexels"
-featrue-img: "assets/img/pexels/bg-little-universe.jpg"
+feature-img: "assets/img/pexels/bg-little-universe.jpg"
 excluded: true
 position: 3
 tags: [Page]
