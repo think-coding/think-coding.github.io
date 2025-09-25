@@ -2,7 +2,7 @@
 layout: search
 title: Search
 permalink: /search/
-subtitle: "What are you looking for?"
+subtitle: "请输入要查找的内容"
 feature-img: "assets/img/pexels/search-map.jpeg"
 icon: "fa-search"
 excluded: true
