@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gallery
+title: 画廊
 subtitle: From the pexels folder
 permalink: /gallery/
 gallery_path: "assets/img/pexels"
