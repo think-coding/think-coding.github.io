@@ -9,8 +9,7 @@ position: 3
 tags: [Page]
 ---
 
-This is a photo gallery made from the static files in the `assets/img/pexels` folder. 
-I wanted to automatically create a simple gallery from a folder without having to create a markdown page as you would for the portfolio.
+这是一个由`assets/img/pexels`文件夹中的静态文件组成的照片库。我想从文件夹中自动创建一个简单的库，而不必像创建投资组合那样创建一个标记页面。
 
 
 {% include gallery.html gallery_path=page.gallery_path %}
