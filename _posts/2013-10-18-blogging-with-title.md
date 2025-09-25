@@ -5,8 +5,8 @@ title: >
 tags: [Test, Image]
 ---
 
-# I am a BIG title
+# 我是一个大标题
 
-This is a very tiny tiny post with less than 250 letters.
+这是一个非常小的帖子，不到250个字母。
 
 
