@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: 索引
-subtitle: From the pexels folder
+subtitle: 所有文章列表
 permalink: /categories/
 excluded: true
 hide: false
