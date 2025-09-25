@@ -1,7 +1,11 @@
-<!-- 在 _includes 目录下创建 code-copy.html 文件 -->
 <script>
 // 页面加载完成后初始化复制功能
 document.addEventListener('DOMContentLoaded', function() {
+  // 检测系统/页面主题模式
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches || 
+                    document.documentElement.hasAttribute('data-theme') && 
+                    document.documentElement.getAttribute('data-theme') === 'dark';
+
   // 为所有代码块添加复制按钮
   document.querySelectorAll('pre').forEach(function(block) {
     // 只处理包含代码的块
@@ -14,44 +18,69 @@ document.addEventListener('DOMContentLoaded', function() {
     copyButton.innerHTML = '<i class="fas fa-copy"></i>';
     copyButton.title = '复制代码';
 
+    // 初始化主题样式
+    if (isDarkMode) {
+      copyButton.classList.add('dark-theme');
+    }
+
     // 点击按钮复制代码
     copyButton.addEventListener('click', function() {
       const code = codeElement.textContent;
       navigator.clipboard.writeText(code).then(function() {
         // 复制成功后改变按钮状态
+        const originalContent = copyButton.innerHTML;
         copyButton.innerHTML = '<i class="fas fa-check"></i>';
+        copyButton.classList.add('copied');
         copyButton.title = '已复制!';
         
         // 2秒后恢复原状
         setTimeout(function() {
-          copyButton.innerHTML = '<i class="fas fa-copy"></i>';
+          copyButton.innerHTML = originalContent;
+          copyButton.classList.remove('copied');
           copyButton.title = '复制代码';
         }, 2000);
       }).catch(function(err) {
         console.error('复制失败:', err);
         copyButton.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
         copyButton.title = '复制失败';
+        setTimeout(function() {
+          copyButton.innerHTML = '<i class="fas fa-copy"></i>';
+          copyButton.title = '复制代码';
+        }, 2000);
       });
     });
 
     // 将按钮添加到代码块
     block.appendChild(copyButton);
   });
+
+  // 监听主题变化（如果页面支持动态切换主题）
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    document.querySelectorAll('.code-copy-btn').forEach(btn => {
+      if (e.matches) {
+        btn.classList.add('dark-theme');
+      } else {
+        btn.classList.remove('dark-theme');
+      }
+    });
+  });
 });
 </script>
 
 <style>
-/* 代码块复制按钮样式 */
+/* 代码块容器样式 - 确保相对定位 */
 pre {
   position: relative;
+  /* 为按钮预留空间 */
+  padding-top: 1.5rem !important;
 }
 
+/* 代码块复制按钮基础样式 */
 .code-copy-btn {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
   padding: 0.25rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -59,6 +88,25 @@ pre {
   transition: all 0.2s ease;
   opacity: 0;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* 白色主题样式 - 白底黑图 */
+.code-copy-btn:not(.dark-theme) {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 黑色主题样式 - 黑底白图 */
+.code-copy-btn.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
 }
 
 /* 鼠标悬停时显示按钮 */
@@ -66,21 +114,28 @@ pre:hover .code-copy-btn {
   opacity: 1;
 }
 
-.code-copy-btn:hover {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* 复制成功状态 - 对勾变为绿色 */
+.code-copy-btn.copied i {
+  color: #28a745 !important; /* 绿色对勾 */
 }
 
-/* 适配深色模式 */
-@media (prefers-color-scheme: dark) {
-  .code-copy-btn {
-    background-color: rgba(50, 50, 50, 0.8);
-    color: #ddd;
-  }
-  
-  .code-copy-btn:hover {
-    background-color: #555;
-    color: white;
-  }
+/* 按钮悬停效果增强 */
+.code-copy-btn:hover {
+  transform: translateY(-1px);
+}
+
+.code-copy-btn:not(.dark-theme):hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.code-copy-btn.dark-theme:hover {
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.15);
+}
+
+/* 图标大小调整 */
+.code-copy-btn i {
+  font-size: 1rem;
+  transition: color 0.2s ease;
 }
 </style>
+    
