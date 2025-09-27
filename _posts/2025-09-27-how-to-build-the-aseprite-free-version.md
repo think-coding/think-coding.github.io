@@ -20,7 +20,7 @@ categories: Document
 
 # 4. 编译skia库
 ## 4.1. 仓库地址
-https://github.com/aseprite/skia
+[https://github.com/aseprite/skia](https://github.com/aseprite/skia)
 
 
 ## 4.2. 下载 & 编译
@@ -56,7 +56,10 @@ ninja -C out/Release-arm64 skia modules -j 8
 ```
 
 # 5. 编译 aseprite
-## 5.1. 下载 & 编译
+## 5.1. 仓库地址
+[https://github.com/aseprite/aseprite.git](https://github.com/aseprite/aseprite.git)
+
+## 5.2. 下载 & 编译
 ```bash
 git clone https://github.com/aseprite/aseprite.git
 cd aseprite
@@ -77,8 +80,8 @@ cmake \
 ninja aseprite
 ```
 
-## 5.2. 移动程序目录并启动
-1. 目录位置
+## 5.3. 移动程序目录并启动
+### 5.3.1. 程序目录位置及文件
 ```bash
 [~/Downloads/Aseprite-v1.3.15.3-Source/build/bin] 
 └─[$]> tree --dirsfirst -L 1
@@ -89,14 +92,14 @@ ninja aseprite
 └── icudtl.dat
 ```
 
-2. 移动文件到程序目录
+### 5.3.2. 移动文件到程序目录
 ```bash
 cd ~
 mkdir aseprite-1.3.15.3-dev
 cp -r ~/Downloads/Aseprite-v1.3.15.3-Source/build/bin/* ~/aseprite-1.3.15.3-dev/
 ```
 
-3. 替换图标
+### 5.3.3. 替换图标
 - 此时 aseprite 的图标是可执行文件，非常不友好
 - 选中 `/Aseprite-v1.3.15.3-Source/data/icons/ase256.png`
 - 【command + C】复制
@@ -104,9 +107,9 @@ cp -r ~/Downloads/Aseprite-v1.3.15.3-Source/build/bin/* ~/aseprite-1.3.15.3-dev/
 - 【command + i】显示简介
 - 选中简介中左上角图标，【command + v】粘贴
 
-4. 制作替身（创建快捷方式）并修改图标，放到桌面等位置
+### 5.3.4. 制作替身（创建快捷方式）并修改图标，放到桌面等位置
 
-5. 运行 aseprite 文件启动
+### 5.3.5. 运行 aseprite 文件启动
 此时语言是英文，且设置中无其他语言可选
 
 # 6. 翻译程序
