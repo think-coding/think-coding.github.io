@@ -1,6 +1,15 @@
+---
+layout: post
+title: 如何编译 Aseprite 免费版本
+tags: [aseprite, Markdown]
+author: think-coding
+categories: Document
+---
 
 # 1. 说明
-编译 aseprite 版本需要 skia 库
+- 编译 aseprite 版本需要 skia 库
+- 编译后 aseprite 是可执行程序，开发版
+- 使用个人编译的 aseprite 制作的像素图，可以用于免费商业用途：）
 
 # 2. 编译平台
 - MacOS
