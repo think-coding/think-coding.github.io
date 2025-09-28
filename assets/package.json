@@ -34,5 +34,8 @@
     "gulp-responsive": "^3.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
   }
 }
