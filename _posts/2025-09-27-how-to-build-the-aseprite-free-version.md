@@ -3,7 +3,7 @@ layout: post
 title: 如何编译像素画制作软件 Aseprite 的 MacOS 免费版本
 tags: [aseprite, Markdown]
 feature-img: "assets/img/feature-img/aseprite-banner.png"
-thumbnail: "assets/thumbnails/feature-img/aseprite-banner.png"
+thumbnail: "assets/img/thumbnails/feature-img/aseprite-banner.png"
 author: think-coding
 categories: Document
 ---
