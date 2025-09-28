@@ -2,6 +2,8 @@
 layout: post
 title: 如何编译像素画制作软件 Aseprite 的 MacOS 免费版本
 tags: [aseprite, Markdown]
+feature-img: "assets/img/feature-img/aseprite-banner.png"
+thumbnail: "assets/thumbnails/feature-img/aseprite-banner.png"
 author: think-coding
 categories: Document
 ---
@@ -125,4 +127,4 @@ cp -r strings/* ~/aseprite-1.3.15.3-dev/data/strings
 ```
 
 # 7. 重新运行就是完美的汉化版了
-{% include aligner.html images="feature-img/aseprite-1.3.15.3-dev.png" column=1 caption="汉化完成啦！" %}
+{% include aligner.html images="screenshot/aseprite-1.3.15.3-dev.png" column=1 caption="汉化完成啦！" %}
