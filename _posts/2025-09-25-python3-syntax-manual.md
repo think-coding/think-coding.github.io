@@ -4,6 +4,9 @@ title: Pythonh3 语法速查手册
 tags: [python3, syntax]
 categories: Syntax
 ---
+python3 作为一款开发效率高、自然语言的开发语言广泛应用于各个领域。
+俗话说：好记性不如烂笔头，有时长时间不用的语法会突然想不起来，翻阅资料很浪费时间，所以整理一篇速查手册备用。
+
 
 # 1. 输出字符串
 ```python

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 如何编译 Aseprite 免费版本
+title: 如何编译像素画制作软件 Aseprite 的 MacOS 免费版本
 tags: [aseprite, Markdown]
 author: think-coding
 categories: Document
 ---
+aseprite 是一款好评如潮的像素画制作软件，它代码开源，在官网($20)和Steam($15)平台有商业版在售。
+它同时支持用户编译源码，作为免费版本使用，但是由于编译过程繁琐、复杂劝退了很多人，如果你在找macOS上的编译方法，这篇笔记可作为参考。
 
 # 1. 说明
 - 编译 aseprite 版本需要 skia 库
