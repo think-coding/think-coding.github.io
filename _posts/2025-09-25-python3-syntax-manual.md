@@ -241,6 +241,7 @@ class Abc:    # 定义类
 ```
 
 # 18. turtle(画笔工具)
+1. 常规使用方法
 ```python
 from turtle import Turtle, Screen   # 导入包
 
@@ -252,23 +253,48 @@ timmy.forward(100)  # 前进100个像素
 my_screen = Screen()    # 初始化画布
 print(my_screen.canvheight) # 输出画布高度
 my_screen.exitonclick() # 点击后退出
+```
 
-
-for _ in range(15): # 画虚线
+2.  画虚线
+```python
+for _ in range(15):
     timmy.forward(10)
     timmy.penup()
     timmy.forward(10)
     timmy.pendown()
+```
 
-
-def draw_shape(num_sides, length):  # 画多边形
+3. 画多边形
+```python
+def draw_shape(num_sides, length):
     angle = 360 / num_sides
     for _ in range(num_sides):
         timmy.forward(length)
         timmy.right(angle)
+```
 
+4. 随机漫步
+```python
+import turtle as t
+import random
 
+tim = t.Turtle()
 
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = (r, g, b)
+    return color
+
+direction = [0, 90, 180, 270]
+tim.pensize(15)
+time.speed("fastest")
+
+for _ in range(200):
+    tim.color(random_color())
+    tim.forward(30)
+    tim.setheading(random.choice(direction))
 ```
 
 # 19. prettytable(美化表格)
@@ -292,4 +318,20 @@ print(heroes.gen()) # 随机生成英雄名字
 # 21. 虚拟环境
 ```python
 python3 -m venv ~/venv
+```
+
+# 22. colorgram(提取图片的色彩RGB数据)
+```python
+import colorgram
+
+rgb_colors = []
+colors = = colorgram.extract('image.jpg', 30)   # 30种颜色
+for color in colors:
+    r = color.rgb.r
+    g = color.rgb.g
+    b = color.rgb.b
+    new_color = (r, g, b)
+    rgb_colors.append(new_color)
+
+print(rgb_colors)
 ```
