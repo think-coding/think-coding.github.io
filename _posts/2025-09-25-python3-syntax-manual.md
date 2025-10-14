@@ -157,16 +157,23 @@ fruits.append("Melon")  # ["Cherry", "Apple", "Pear", "Melon"]
 fruits.remove("Apple")  # ["Cherry", "Pear", "Melon"]
 fruits.pop()    # # ["Cherry", "Pear"]
 new_list.extend(fruits)   # 将 fruits 追加到  new_list 末尾
+l = [ i for i in items if i > 0 ]   # lambda 表达式直接赋值list
 ```
 
-# 11. random模块 - 伪随机数
+# 11. 字典
+```python
+new_dict = { key:value for item in list }
+new_dict = { key:value for (key:value) in dict.items() if test }
+```
+
+# 12. random模块 - 伪随机数
 ```python
 import random
 print(random.choice(fruits))
 print(random.randint(0, 4))
 ```
 
-# 12. 循环
+# 13. 循环
 ```python
 for item in list_of_items:
     # do some thing for each item
@@ -184,7 +191,7 @@ while flag:
         flag = 0
 ```
 
-# 13. 函数
+# 14. 函数
 ```python
 def func():
     do this
@@ -207,11 +214,82 @@ def func(**kargs):  # func({"name": bob, "age": 20})
     print(bob['age'])
 ```
 
-# 14. 注释
+# 15. 注释
 ```python
 # 单行注释
 """
 我是一个
 多行注释
 """
+```
+
+# 16. pandas
+```python
+import pandas
+data_frame = pandas.DataFrame(dict)
+
+for (key,value) in data_frame.items():
+    print(key, value)
+```
+
+# 17. class
+```python
+class Abc:    # 定义类
+    def __init__(self, name): # 定义初始化属性
+        self.name = "abc"
+    pass
+```
+
+# 18. turtle(画笔工具)
+```python
+from turtle import Turtle, Screen   # 导入包
+
+timmy = Turtle()    # 初始化画笔
+timmy.shape("turtle")   # 定义画笔形状
+timmy.color("coral")    # 定义画笔颜色
+timmy.forward(100)  # 前进100个像素
+
+my_screen = Screen()    # 初始化画布
+print(my_screen.canvheight) # 输出画布高度
+my_screen.exitonclick() # 点击后退出
+
+
+for _ in range(15): # 画虚线
+    timmy.forward(10)
+    timmy.penup()
+    timmy.forward(10)
+    timmy.pendown()
+
+
+def draw_shape(num_sides, length):  # 画多边形
+    angle = 360 / num_sides
+    for _ in range(num_sides):
+        timmy.forward(length)
+        timmy.right(angle)
+
+
+
+```
+
+# 19. prettytable(美化表格)
+```python
+from prettytable import PrettyTable
+
+table = PrettyTable()
+table.add_column("name", ["Pikechu", "Squirtle", "Charmander"]) # 添加列和数据
+table.add_column("type", ["Electric", "Water", "Fire"])
+
+table.align = "l"   # 左对齐 c-居中 r-右对齐
+print(table)
+```
+
+# 20. heroes
+```python
+import heroes
+print(heroes.gen()) # 随机生成英雄名字
+```
+
+# 21. 虚拟环境
+```python
+python3 -m venv ~/venv
 ```
