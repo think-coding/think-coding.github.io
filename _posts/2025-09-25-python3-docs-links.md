@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Pythonh3 开发相关文档链接
-feature-img: "assets/img/feature-img/python-banner.png"
-thumbnail: "assets/img/thumbnails/feature-img/python-banner.png"
+feature-img: "assets/img/feature-img/python-link-banner.png"
+thumbnail: "assets/img/thumbnails/feature-img/python-link-banner.png"
 author: think-coding
 categories: Document
 tags: [python3, document]
