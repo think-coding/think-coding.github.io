@@ -1,3 +1,13 @@
+---
+layout: post
+title: Pythonh3 开发相关文档链接
+feature-img: "assets/img/feature-img/python-banner.png"
+thumbnail: "assets/img/thumbnails/feature-img/python-banner.png"
+author: think-coding
+categories: Document
+tags: [python3, document]
+---
+
 [Discord讨论组](https://discord.com/invite/3DDPkCAU3N)
 [编程12守则](https://att-c.udemycdn.com/2020-11-28_12-37-48-4df710b84003e5fb86f72fb2fe0542e8/original.pdf?response-content-disposition=attachment%3B+filename%3D12%252BRules%252Bto%252BLearn%252Bto%252BCode%252BeBook-Copyright%2BApp%2BBrewery.pdf&Expires=1758794987&Signature=KWorHpoiERbTA-rUnm-ZYqjoVQrurqf610gVM8Hjxy3H~pQmWGL33szRccqGYRcKPbPSW2yUgm8JGcycNyVhG~Zl24Lz3R4BlE-iko5zc61q7ZVYuclHUG8gtstSyfJ6eucl~HRwEK~nP~xywf8poevXI~35aPaABqENS5wRJEpEf7WDR3hpVHgAgEqs3mTB-PA4oBs~FUAnhwV799Wz~b-oD1mDPgMKlecS9-Sv0K1BLl-ARnX~Q0W0NX7la3CDnrmxpBoLaXhqiklvIQAsleVZdoJtw5Y2sHVnGFfbCUUnxZx0ZM7nYfILVtQF7HPWEbe9et1buHtiV5eU3DnsTg__&Key-Pair-Id=K3MG148K9RIRF4)
 [100天打卡表格](https://att-c.udemycdn.com/2020-11-28_12-42-56-d5457148ef29f606e705c8230db23f1d/original.pdf?response-content-disposition=attachment%3B+filename%3D100%2BDays%2Bof%2BPython%2BCheck%2BOff%2BPosters.pdf&Expires=1758795082&Signature=oiPCwU4tJUY6FGLjdSVtg~q9ElXrUAq5~OAYZw7tGTCsv-V8b6p0Gr9W4HNRWm-aW53ptTt9-CLQlGo0JGliPKzVlG1HsvTXUjWPkRNETW9yyHJDI91ITfj~J8VhTUx5oX3mAeBj8iaeNfI1xSdfxVP5U4vMKpD-~MzlyZqVGWAaXOeiOLJWMCBv4pADEvqvIniLV~iHYuHjfx919h7EK2E-AVHyX8JQCgqLhrHlBq7oryl4oqQs8Jx7pB4OzTikgfKquLJ7iJVlw9vLosxT6bhVAaKxP1MHktCreF5zPvmmkX4CrsQ0igiXb19sMCjjEefkGPLvgfjOhuShR9wMfQ__&Key-Pair-Id=K3MG148K9RIRF4)
@@ -33,6 +43,8 @@
 [宝可梦图鉴](https://pokemondb.net/pokedex)
 [python包检索](https://pypi.org/)
 [prettytable wiki](https://code.google.com/archive/p/prettytable/wikis/Tutorial.wiki)
-[1994 年的史蒂夫·乔布斯：《滚石》杂志采访](https://www.rollingstone.com/culture/culture-news/steve-jobs-in-1994-the-rolling-stone-interview-231132/)
+[琐事问题数据库](https://opentdb.com/)
+[随机游走](https://en.wikipedia.org/wiki/Random_walk)
+[RGB颜色预览](https://www.w3schools.com/colors/colors_rgb.asp)
 []()
 []()
