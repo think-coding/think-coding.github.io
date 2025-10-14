@@ -297,6 +297,11 @@ for _ in range(200):
     tim.setheading(random.choice(direction))
 ```
 
+5. 画点
+```python
+tim.dot(20, random.color())
+```
+
 # 19. prettytable(美化表格)
 ```python
 from prettytable import PrettyTable
@@ -335,3 +340,5 @@ for color in colors:
 
 print(rgb_colors)
 ```
+
+# 23. 
