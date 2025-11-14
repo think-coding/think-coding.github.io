@@ -2,7 +2,7 @@
 layout: post
 title: 皇家骑士团-重生：全称号攻略及路线规划
 feature-img: "assets/img/feature-img/ogre-logo.jpg"
-thumbnail: "assets/img/thumbnails/feature-img/aseogre-logo.jpg"
+thumbnail: "assets/img/thumbnails/feature-img/ogre-logo.jpg"
 author: think-coding
 categories: Guide
 tags: [皇家骑士团:重生, Tactics Ogre, Markdown, Game]
