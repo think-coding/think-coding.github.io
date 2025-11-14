@@ -2,11 +2,14 @@
 layout: post
 title: 皇家骑士团-重生：全称号攻略及路线规划
 feature-img: "assets/img/feature-img/ogre-logo.jpg"
-thumbnail: "assets/img/thumbnails/feature-img/ogre-logo.jpg"
+thumbnail: "assets/img/thumbnails/feature-img/aseogre-logo.jpg"
 author: think-coding
 categories: Guide
 tags: [皇家骑士团:重生, Tactics Ogre, Markdown, Game]
 ---
+
+{% include aligner.html images="screenshot/ogre-route-a.jpg" column=1 caption="路线图A" %}
+{% include aligner.html images="screenshot/ogre-route-b.jpg" column=1 caption="路线图B" %}
 
 # 1.【前言】
 - 战斗中倒地就算受伤（僵尸例外），没在三回合救起就算死亡，还有掉落深渊直接死亡。
@@ -174,6 +177,7 @@ tags: [皇家骑士团:重生, Tactics Ogre, Markdown, Game]
 - 至此受伤死亡相关的称号全部拿齐，后续随便死伤都行。
 - 结局是主角协助姐姐称王，然后主角出海，王国延续了一千年的和平。
 
+{% include aligner.html images="screenshot/ogre-logo-2.webp" column=1 caption="" %}
 
 # 5.【四周目 L线+死宫+通关后任务】
 ## 5.1. 第三章
