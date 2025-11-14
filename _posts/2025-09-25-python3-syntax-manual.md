@@ -4,7 +4,7 @@ title: Pythonh3 语法速查手册
 feature-img: "assets/img/feature-img/python-banner.png"
 thumbnail: "assets/img/thumbnails/feature-img/python-banner.png"
 author: think-coding
-categories: Document
+categories: Syntax
 tags: [python3, syntax]
 ---
 
