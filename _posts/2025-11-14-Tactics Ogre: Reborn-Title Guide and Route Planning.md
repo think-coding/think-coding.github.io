@@ -1,19 +1,23 @@
 ---
 layout: post
 title: 皇家骑士团-重生：全称号攻略及路线规划
-feature-img: "assets/img/feature-img/ogre-logo.jpg"
-thumbnail: "assets/img/thumbnails/feature-img/ogre-logo.jpg"
+feature-img: "assets/img/feature-img/ogre-logo.png"
+thumbnail: "assets/img/thumbnails/feature-img/ogre-logo.png"
 author: think-coding
 categories: Guide
 tags: [皇家骑士团:重生, Tactics Ogre, Markdown, Game]
 ---
+
+- 攻略流程包括了全称号、全人物、全图鉴、全结局，加了心得提示，新人看了少走弯路，流程同时也能拿到PS白金奖杯。本攻略参考了天幻网、皇家骑士团重生资料站和贴吧，结合自己的心得完成。
+- 规划上先走三条路线通关拿称号，最后打通死宫和补漏，打通死宫的时候拿到白金奖杯。
+
+{% include aligner.html images="screenshot/ogre-logo-1.jpg" column=1 caption="" %}
 
 # 1.【前言】
 - 战斗中倒地就算受伤（僵尸例外），没在三回合救起就算死亡，还有掉落深渊直接死亡。
 - 受伤死亡是永久记录在报告里的，跳回之前锚点也没有用，除非重新开档，所以相关的称号必须针对性搞定。
 - 无伤&无死亡通关，1-10人受伤&死亡通关，11-20人受伤&死亡通关，均有对应的2个称号 拿全至少通关三次，可以刷死宫之前先搞定。刚好游戏也有三条路线和三个结局，所以可以一起完成。
 - 重生称号去掉了所有未使用命运之轮 C.H.A.R.I.O.T.的要求，所以放心大胆的用悔棋，不会影响拿称号。
-- 攻略流程包括了全称号、全人物、全图鉴、全结局，加了心得提示，新人看了少走弯路，流程同时也能拿到PS白金奖杯。本攻略参考了天幻网、皇家骑士团重生资料站和贴吧，结合自己的心得完成。
 - 队伍前期锤子30级开始打拳（风神殿开了刷5~6个迦楼罗拳套，装备者同时转风属性），为了无伤用强势组合。
 - 迦楼罗拳套强度远超同期其他武器，拿了打通死宫100层不用换武器，强度仅次于神将武器和黑暗骑士武器。
 - 拳套30级必杀攻击高范围远穿透防御，很容易集火秒BOSS。贴吧大佬恒樣力推的打拳流对无伤特别好用。
