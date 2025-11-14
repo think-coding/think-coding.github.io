@@ -233,35 +233,56 @@ for (key,value) in data_frame.items():
 ```
 
 # 17. class
+1. 定义类
 ```python
-class Abc:    # 定义类
+class Abc:
     def __init__(self, name): # 定义初始化属性
         self.name = "abc"
     pass
 ```
 
+2. 继承
+```python
+class Animal(): # 基础类
+    def __init__(self):
+        self.num_eyes = 2
+
+    def breath(self):
+        print("Inhale, exhale.")
+
+class Fish(Animal): # 子类
+    def __init__(self):
+        super().__init__()  # 继承父类的属性和初始化，避免被遗漏
+    
+    def swim(self):
+        print("moving in water.")
+```
+
 # 18. turtle(画笔工具)
 1. 常规使用方法
 ```python
-from turtle import Turtle, Screen   # 导入包
+from turtle import Turtle, Screen
 
-timmy = Turtle()    # 初始化画笔
-timmy.shape("turtle")   # 定义画笔形状
-timmy.color("coral")    # 定义画笔颜色
-timmy.forward(100)  # 前进100个像素
+tim = Turtle()    # 初始化画笔
+tim.shape("turtle")   # 定义画笔形状
+tim.color("coral")    # 定义画笔颜色
+tim.forward(100)  # 前进100个像素
+tom = Turtle("square")  # 初始化方形画笔
 
-my_screen = Screen()    # 初始化画布
-print(my_screen.canvheight) # 输出画布高度
-my_screen.exitonclick() # 点击后退出
+screen = Screen()    # 初始化画布
+screen.setup(width=500, height=400) # 设置窗口大小
+screen.bgcolor("black") # 设置背景色
+print(screen.canvheight) # 输出画布高度
+screen.exitonclick() # 点击后退出
 ```
 
 2.  画虚线
 ```python
 for _ in range(15):
-    timmy.forward(10)
-    timmy.penup()
-    timmy.forward(10)
-    timmy.pendown()
+    tim.forward(10)
+    tim.penup()
+    tim.forward(10)
+    tim.pendown()
 ```
 
 3. 画多边形
@@ -269,8 +290,8 @@ for _ in range(15):
 def draw_shape(num_sides, length):
     angle = 360 / num_sides
     for _ in range(num_sides):
-        timmy.forward(length)
-        timmy.right(angle)
+        tim.forward(length)
+        tim.right(angle)
 ```
 
 4. 随机漫步
@@ -300,6 +321,22 @@ for _ in range(200):
 5. 画点
 ```python
 tim.dot(20, random.color())
+```
+
+6. 监听按键执行函数
+```python
+screen.listen()
+screen.onkey(key="space", fun=move_forwards)
+```
+
+7. 输入框
+```python
+user_bet = screen.textinput(title="make your bet", prompt="Which turtle will win the race? Enter a color: ")
+```
+
+8. 动画效果(实时更新画笔位置)
+```python
+tim.update()
 ```
 
 # 19. prettytable(美化表格)
