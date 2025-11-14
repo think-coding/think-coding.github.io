@@ -8,9 +8,6 @@ categories: Guide
 tags: [皇家骑士团:重生, Tactics Ogre, Markdown, Game]
 ---
 
-{% include aligner.html images="screenshot/ogre-route-a.jpg" column=1 caption="路线图A" %}
-{% include aligner.html images="screenshot/ogre-route-b.jpg" column=1 caption="路线图B" %}
-
 # 1.【前言】
 - 战斗中倒地就算受伤（僵尸例外），没在三回合救起就算死亡，还有掉落深渊直接死亡。
 - 受伤死亡是永久记录在报告里的，跳回之前锚点也没有用，除非重新开档，所以相关的称号必须针对性搞定。
@@ -29,6 +26,11 @@ tags: [皇家骑士团:重生, Tactics Ogre, Markdown, Game]
 - 其实集中培养主角连十二神将和黑暗骑士团战都可以单挑，最多带个穿汗臭套的姐姐辅助加快灭敌速度。
 - 通关后最终任务主角姐姐麦斯三人无伤挑战黑暗骑士全员且最后击杀BOSS有特殊掉落和专门的称号。
 - 规划上先走三条路线通关拿称号，最后打通死宫和补漏，打通死宫的时候拿到白金奖杯。
+
+{% include aligner.html images="screenshot/ogre-route-a.jpg" column=1 caption="路线图A" %}
+
+{% include aligner.html images="screenshot/ogre-route-b.jpg" column=1 caption="路线图B" %}
+
 
 # 2.【一周目 L线】
 ## 2.1. 第一章
